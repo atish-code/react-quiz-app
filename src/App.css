@@ -1,0 +1,52 @@
+
+button {
+  display: flex;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+button.correct {
+  background-color: #22c55e !important;
+  color: #ffffff !important;
+  border-color: #16a34a !important;
+}
+
+button.wrong {
+  background-color: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #dc2626 !important;
+}
+
+button.correct:hover,
+button.wrong:hover {
+  border-color: inherit !important;
+}
+
+button:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+/* Timer bar container */
+.timer-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #333;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0 20px;
+}
+
+/* Moving progress */
+.timer-progress {
+  height: 100%;
+  background-color: #22c55e;
+  transition: width 1s linear;
+}
+
+/* Warning state when time is low */
+.timer-progress.low {
+  background-color: #ef4444;
+}
+.quitB{
+  width: 550px;
+}

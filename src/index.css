@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #FFFCF3;
+}
+
+/* ===== SIDEBAR NUMBER BUTTONS ===== */
+.no-button {
+  @apply bg-[#3229D0] text-white rounded-full w-10 h-10 flex items-center justify-center;
+}
+
+.button-col-div {
+  @apply flex gap-4 ;
+}
+
+/* ===== QUESTION OPTIONS ===== */
+.option-btn {
+  @apply border-2 border-[#3229D0] rounded-full px-6 py-2 w-fit text-left;
+}
+
+.option-btn.selected {
+  @apply bg-[#3229D0] text-white;
+}
+
+/* ===== TIMER ===== */
+.timer-bar {
+  @apply w-full h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.timer-progress {
+  @apply h-full bg-[#3229D0] transition-all duration-1000;
+}
+
+.timer-progress.low {
+  @apply bg-red-500;
+}
+
+.correct-option {
+  @apply border-green-500 text-green-600;
+}
+
+.wrong-option {
+  @apply border-red-500 text-red-600;
+}
+
+.icon {
+  @apply ml-3 font-bold;
+}
+.no-button.active {
+  @apply  bg-[#FBF6EA] text-black ring-2 ring-[#3229D0];
+}
